@@ -1,0 +1,50 @@
+footer {
+	min-height: 200px;
+	background: $bg_menu;
+	padding: 75px 30px 30px;
+
+	.network {
+		text-align: center;
+		margin-bottom: $backdown_bot;
+
+		h3 {
+			margin-bottom: $backdown_bot / 2;
+		}
+
+		.social {
+			margin-bottom: $backdown_bot / 2;
+
+			li {
+				display: inline-block;
+				margin: 5px 10px;
+			}
+		}	
+
+		h4 {
+			margin-bottom: 75px;
+
+			a {
+				@extend .fa;
+			}
+		}	
+	}
+
+	.fa {
+		color: $color_text;
+		-webkit-transition: color .4s ease-in;
+		transition: color .4s ease-in;
+
+		&:hover {
+			color: $bg;
+			-webkit-transition: color .6s ease-out;
+			transition: color .6s ease-out;
+		}
+	}
+
+	.copyright {
+		-webkit-box-align: end;
+		-webkit-align-items: flex-end;
+		-ms-flex-align: end;
+		align-items: flex-end;
+	}
+}
