@@ -1,1 +1,1 @@
-# [DEMO](http://codepen.io/AlinaPant/details/XMRapE/)
+# [DEMO](http://codepen.io/AlinaPant/full/XMRapE/)
