@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Random Quote Machine ("Elfen Lied")
+	link(href="https://fonts.googleapis.com/css?family=Oswald|Tangerine:700" rel="stylesheet")
+	link(href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+    link(href="style.css" rel="stylesheet")
+  body
+	.container
+		h1.title Quotes from "Elfen Lied"
+		button.btn Change quote
+		.box_quotes
+			p.quote “When you're miserable, you need to make someone even more miserable than yourself.”
+			p.author - Lucy
+		a#social_share.tw Twitter
+		.coded_by coded by 
+			a(href="http://codepen.io/AlinaPant/", target="_blank") #[strong Alina Panteleienko]
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+	script(src="script.js")
