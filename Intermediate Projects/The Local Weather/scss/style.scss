@@ -1,0 +1,121 @@
+$url: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/VWCUW5K1MN.jpg");
+
+$bg_box: rgba(255, 255, 255, .3);
+$color_text: #1a1a1a;
+$border: #888;
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 24px;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+	color: $color_text;
+  background: $url top left no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+	display: inline-block;
+	background: $bg_box;
+	padding: 35px;
+	padding-top: 20%;
+}
+
+.title {
+  font-size: 34px;
+}
+
+.icon_temp {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	
+	img {
+		vertical-align: middle;
+	}
+}
+
+#icon {
+  position: relative;
+  bottom: -1px;
+}
+
+#farhT {
+  font-weight: bold;
+	cursor: pointer;
+	-webkit-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	transition: all 1s linear;
+}
+
+#location,
+#weather,
+#windSpeed {
+  display: inline-block;
+  border: 1px solid $border;
+  padding: 12px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.coded_by {
+	position: relative;
+	top: 95px;
+	text-align: center;
+	
+	&:hover a:before{
+		width: 100%;
+		-webkit-transition: all .6s ease-out;
+		-o-transition: all .6s ease-out;
+		-moz-transition: all .6s ease-out;
+		transition: all .6s ease-out;
+	}
+}
+
+a {
+	position: relative;
+	display: inline-block;
+	color: $color_text;
+	text-decoration: none;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 50%;
+		background: $bg_box;
+		z-index: -1;
+		-webkit-transition: all .4s ease-in;
+		-o-transition: all .4s ease-in;
+		-moz-transition: all .4s ease-in;
+		transition: all .4s ease-in;
+	}
+}
+
+::-moz-selection {
+	color: $border;
+	background: $color_text;
+}
+
+::selection {
+	color: $border;
+	background: $color_text;
+}

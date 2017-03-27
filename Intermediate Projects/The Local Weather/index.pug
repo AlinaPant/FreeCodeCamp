@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title The Local Weather
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet")
+		link(href="style/reset.css" rel="stylesheet")
+    link(href="style/style.css" rel="stylesheet")
+  body
+		.container
+			h1.title Local Weather App
+			.icon_temp
+				#icon
+				#farhT
+			.weather_wrapper
+				#location
+				#weather
+				#windSpeed
+		.coded_by coded by 
+				a(href="http://alinapant.ml/", target="_blank") #[strong Alina Panteleienko]
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="js/script.js")
